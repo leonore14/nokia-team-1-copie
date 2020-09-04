@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import nokiaLogo from '../logo/NOKIA_LOGO_RGB_MR.png';
 import cartIcon from '../icons/cart.png';
-import languagesIcon from '../icons/ic_language_black_48dp.png';
+import languagesIcon from '../icons/languages.png';
 import './NavbarStyle.css';
 
 
@@ -18,7 +18,7 @@ const Navbar = () => {
                 </div>
                     <div className="navbarList">
                     <li>
-                        <NavLink to='/' activeclassname='active' className="navbarItem" >Classic Phones</NavLink>
+                        <NavLink to='/' activeclassname='active' className="navbarItemClassic" >Classic Phones</NavLink>
                     </li>
                     <li>
                         <NavLink to='/' activeclassname='active' className="navbarItem" >Community</NavLink>
