@@ -27,10 +27,10 @@ const Navbar = () => {
                         <NavLink to='/' activeclassname='active' className="navbarItem" >Support</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/' activeclassname='active' className="navbarIcon" ><img className="navbarLogoImg" src={cartIcon} alt='cartIcon' ></img></NavLink>
+                        <NavLink to='/' activeclassname='active' ><img className="navbarIcon" src={cartIcon} alt='cartIcon' ></img></NavLink>
                     </li>
                     <li>
-                        <NavLink to='/' activeclassname='active' className="navbarIcon" ><img className="navbarLogoImg" src={languagesIcon} alt='languagesIcon' ></img></NavLink>
+                        <NavLink to='/' activeclassname='active' ><img className="navbarIcon" src={languagesIcon} alt='languagesIcon' ></img></NavLink>
                     </li>
                 </div>
             </ul>
