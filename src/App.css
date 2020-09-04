@@ -12,6 +12,10 @@ body {
   text-decoration: none;
 }
 
+h1{
+  font-weight: lighter;
+}
+
 .appDiv{
   display: flex;
   flex-direction: column;
