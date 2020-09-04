@@ -1,86 +1,88 @@
 {/* NAVBAR CSS */}
 
 .navbar{
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-right: 2%;
     margin-left: 2%;
     width: 100%;
-    position: absolute;
-    z-index: 1;;
   }
   
-  .navbar ul{
+.navbar ul{
     list-style: none;
     display: flex;
     align-items: center;
-  }
+}
   
-  .navbar li{
+.navbar li{
     transition: 0.2s ease-out;
-  }
+}
 
-  .navbar .navbarList li:hover{
+.navbar .navbarList li:hover{
     opacity: 0.4;
-  }
+}
   
-  .navbar a{
+.navbar a{
     text-decoration: none;
     color: black;
-  }
+}
   
-  .navbar .active{
-    font-weight: 500;
-  }
+.navbar .active{
+  font-weight: 500;
+}
   
-  .navbarLogo li:hover{
-    opacity: 0.85;
-  }
+.navbarLogo li:hover{
+  opacity: 0.85;
+}
 
-  .navbarLogo{
-    align-self: center;
-  }
+.navbarLogo{
+  align-self: center;
+}
   
-  .navbarLogoImg{
-    width:80%;
-    justify-self: flex-start;
-    align-self: center;
-  }
+.navbarLogoImg{
+  width:80%;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.navbarIcon{
+  height: 22px;
+  width : auto;
+}
   
-  .navbarList{
+.navbarList{
     display: flex;
     justify-content: flex-end;
     margin-right: 3%;
     margin-left: auto;
-  }
+}
   
-  .navbarList li{
+.navbarList li{
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 4%;
     margin-left: 2%;
-  }
+    white-space: nowrap;
+}
 
-  .navbarItem{
-      flex-wrap: nowrap;
-  }
-
-  
   
   
   
   {/* NAVBAR RESPONSIVENESS */}
-  
-  
-  @media screen and (max-width: 768px){
-  
-    .navbarList{
-      display: none;
-    }
 
-    .navbarLogo{
-      padding-top: 1.5rem;
+  @media screen and (min-width: 415px) and (max-width: 768px){
+
+    .navbarItem{
+      display: none;
     }
   
   }
-
+  
+  
+  @media screen and (max-width: 414px){
+  
+    .navbarItem{
+      display: none;
+    }
+  
+  }
   

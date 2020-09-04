@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './components/NavBar/Navbar';
 import Home from './components/Home/Home';
 import SelectorTool from './components/SelectorTool/SelectorTool';
+import Footer from './components/Footer/Footer'
 
 
 
@@ -13,8 +14,8 @@ function App() {
     <>
     <div className="appDiv">  
     <Navbar />
-      
-      
+    
+    <Footer />
     </div>
     </>
   );
