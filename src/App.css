@@ -8,8 +8,7 @@
 }
 
 body {
-  
-  font-weight: 300;
+  font-family: 'NokiaPureTWeb';
   text-decoration: none;
 }
 
@@ -18,3 +17,4 @@ body {
   flex-direction: column;
   position: relative;
 }
+

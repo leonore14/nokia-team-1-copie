@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: 'NokiaPureHeadline';
+    src: local('NokiaPureHeadline_Bd'), url('./fonts/NokiaPureHeadline_Bd.ttf') format('truetype');
+    src: local('NokiaPureHeadline_Lt'), url('./fonts/NokiaPureHeadline_Lt.ttf') format('truetype');
+    src: local('NokiaPureHeadline_Rg'), url('./fonts/NokiaPureHeadline_Rg.ttf') format('truetype');
+    src: local('NokiaPureHeadline_ULt'), url('./fonts/NokiaPureHeadline_ULt.ttf') format('truetype');
+    src: local('NokiaPureHeadline_XBd'), url('./fonts/NokiaPureHeadline_XBd..ttf') format('truetype');
+    src: local('NokiaPureHeadline_Bd'), url('./fonts/NokiaPureTWeb_Bd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NokiaPureTWeb';
+    src: local('NokiaPureTWeb_Bd'), url('./fonts/NokiaPureTWeb_Bd.ttf') format('truetype');
+    src: local('NokiaPureTWeb_Lt'), url('./fonts/NokiaPureTWeb_Lt.ttf') format('truetype');
+    src: local('NokiaPureTWeb_Rg'), url('./fonts/NokiaPureTWeb_Rg.ttf') format('truetype');
+}
