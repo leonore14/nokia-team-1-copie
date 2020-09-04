@@ -1,10 +1,9 @@
 {/* NAVBAR CSS */}
 
 .navbar{
-    font-size: 0.95rem;
-    margin-right: 4%;
-    margin-left: 4%;
-
+    font-size: 1rem;
+    margin-right: 2%;
+    margin-left: 2%;
     width: 100%;
     position: absolute;
     z-index: 1;;
@@ -14,7 +13,6 @@
     list-style: none;
     display: flex;
     align-items: center;
-    width: 100%;
   }
   
   .navbar li{
@@ -35,7 +33,7 @@
   }
   
   .navbarLogo li:hover{
-    opacity: 0.75;
+    opacity: 0.85;
   }
 
   .navbarLogo{
@@ -43,7 +41,7 @@
   }
   
   .navbarLogoImg{
-    width:70%;
+    width:80%;
     justify-self: flex-start;
     align-self: center;
   }
@@ -51,13 +49,22 @@
   .navbarList{
     display: flex;
     justify-content: flex-end;
-    margin-right: 7%;
+    margin-right: 3%;
     margin-left: auto;
   }
   
   .navbarList li{
-    margin: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 4%;
+    margin-left: 2%;
   }
+
+  .navbarItem{
+      flex-wrap: nowrap;
+  }
+
+  
   
   
   
