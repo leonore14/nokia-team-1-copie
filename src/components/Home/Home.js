@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Banner from '../Banner';
 import OnePhone from './OnePhone';
 import { NavLink } from 'react-router-dom';
+import TeamFavorite from '../TeamFavorite';
 
 
 class Home extends Component {
@@ -33,7 +34,8 @@ render() {
 
     <div className="SelectorToolDiv">
         <Banner />
-        
+    
+        <TeamFavorite />
         <div>
           <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
 
@@ -57,3 +59,4 @@ render() {
 }
 
 export default Home;
+
