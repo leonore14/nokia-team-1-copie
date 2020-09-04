@@ -12,6 +12,8 @@ function App() {
   return (
     <>
     <div className="appDiv">  
+    <Navbar />
+      
       
     </div>
     </>
