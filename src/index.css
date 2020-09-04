@@ -24,8 +24,16 @@ code {
 }
 
 @font-face {
-  font-family: 'NokiaPureTWeb';
+  font-family: 'NokiaPureTWebBold';
     src: local('NokiaPureTWeb_Bd'), url('./fonts/NokiaPureTWeb_Bd.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NokiaPureTWebLight';
     src: local('NokiaPureTWeb_Lt'), url('./fonts/NokiaPureTWeb_Lt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NokiaPureTWebRegular';
     src: local('NokiaPureTWeb_Rg'), url('./fonts/NokiaPureTWeb_Rg.ttf') format('truetype');
 }
