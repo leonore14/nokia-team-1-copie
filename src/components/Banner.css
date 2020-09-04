@@ -16,8 +16,14 @@
 	width: 300px;
 }
 
+.banner__title{
+	margin-left: 70px;
+}
+
 .banner > .banner__findButton {
 	border: 1px solid #fff;
 	border-radius: 25px;
 	color: #fff;
+	margin-left: 70px;
+	margin-top : 80px;
 }
