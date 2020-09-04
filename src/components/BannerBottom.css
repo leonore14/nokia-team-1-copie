@@ -1,0 +1,23 @@
+.bannerBottom {
+	color: #323138;
+	position: relative;
+	object-fit: contain;
+	height: 90vh;
+	width: 100%;
+	background-position: center;
+	background-image: url('./images/PhonesForEveryoneBanner.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bannerBottom__info {
+	padding-top: 60vh;
+	padding-left: 200px;
+	padding-right: 50px;
+	padding-bottom: 40px;
+	
+}
+
+.bannerBottom__title {
+	margin-top: 10px;
+}
