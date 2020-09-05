@@ -15,52 +15,44 @@ class Home extends Component {
     };
   }
 
-  componentDidMount() {
-    this.getPhone();
-  }
+	componentDidMount() {
+		this.getPhone();
+	}
 
-getPhone = () => {
-    fetch (`https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones`)
-    .then(response => response.json())
-    .then(data => {
-        this.setState({data})
-    })
-}
+	getPhone = () => {
+		fetch(`https://nokia-hackathon.herokuapp.com/phones`)
+			.then(response => response.json())
+			.then(data => {
+				this.setState({ data })
+			})
+	}
 
 
+	render() {
 
-render() {
-
-  return (
-
-    <div className="home">
+		return (
+      <div className="home">
         <Banner />
-    
         <TeamFavorite />
-        <div>
-          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
-        </div>
-
-        <div className="phones">
-                {this.state.data.map(phone => 
-                    <OnePhone
-                        picture={phone.pictures} 
-                        name={phone.model} 
-                        shortDescription={phone.battery} 
-                    />
-                )}
-        </div>
-
         <BannerBottom />
-
         <div>
           <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
         </div>
 
-    </div>
+				<div className="phones">
+					{this.state.data.map(phone =>
+						<OnePhone
+							picture={phone.pictures}
+							name={phone.model}
+							shortDescription={phone.battery}
+						/>
+					)}
+				</div>
 
-  );
-}
+			</div>
+
+		);
+	}
 
 }
 
