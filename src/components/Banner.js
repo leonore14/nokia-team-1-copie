@@ -16,8 +16,7 @@ function Banner() {
 				<h1> Let's discover our </h1>
 				<h1>Classic Phones</h1>
 			</div>
-
-		
+			
 			<Button className="banner__findButton">Find out more</Button>
 			
 		</div >
