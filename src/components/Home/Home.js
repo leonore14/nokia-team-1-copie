@@ -3,6 +3,7 @@ import Banner from '../Banner';
 import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
 import { NavLink } from 'react-router-dom';
+import TeamFavorite from '../TeamFavorite';
 
 
 class Home extends Component {
@@ -34,6 +35,11 @@ render() {
 
     <div className="home">
         <Banner />
+    
+        <TeamFavorite />
+        <div>
+          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
+        </div>
 
         <div className="phones">
                 {this.state.data.map(phone => 
@@ -59,3 +65,4 @@ render() {
 }
 
 export default Home;
+
