@@ -1,46 +1,7 @@
-import React, { Component } from 'react';
-import Banner from '../Banner';
-import BannerBottom from '../BannerBottom';
-import OnePhone from './OnePhone';
-import TeamFavorite from '../TeamFavorite';
-import FullRange1 from '../FullRange/FullRange1';
-import FullRange2 from '../FullRange/FullRange2';
-import FullRange3 from '../FullRange/FullRange3';
-import Carousel from '../Carousel/Carousel';
-import './HomeStyle.css';
 
-
-class Home extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-	  data : [],
-	  isShowingRange : false,
-    };
-  }
-
-	componentDidMount() {
-		this.getPhone();
-	}
-
-	getPhone = () => {
-		fetch(`https://nokia-hackathon.herokuapp.com/phones`)
-			.then(response => response.json())
-			.then(data => {
-				this.setState({ data })
-			})
-	}
-
-<<<<<<< HEAD
-	
-	
-=======
 	handleClick = () => {
 		this.setState({ isShowingRange: !this.state.isShowingRange })
 	}
-
->>>>>>> 20995f93e5b1cc192fff27d345c2ea897ad866e6
 	render() {
 
 		return (
