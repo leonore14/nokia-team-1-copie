@@ -1,5 +1,10 @@
 .FullRangeDiv{
     margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+.FullRangeDiv2{
+    margin-top: 4%;
     margin-bottom: 8%;
 }
 
@@ -132,9 +137,9 @@ a{
     padding-bottom:0.7%;
     padding-right: 2%;
     padding-left: 2%;
-    border: none;
+    border: solid 1px white;
     border-radius : 25px;
-    background-color: #F76568;
+    background-color: transparent;
     color:white;
     margin-left:auto;
     margin-right:auto;
@@ -161,3 +166,121 @@ button a{
     text-decoration: none;
     color: black;
 }
+
+
+.rangeModel3{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: #F76568;
+    color: white;
+    height: 650px;
+}
+
+.rangeModel4{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+    margin-right:2%;
+    background-color: #323138;
+    color: white;
+    height: 650px;
+}
+
+.rangeModel5{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: #7D977A;
+    color: white;
+    height: 650px;
+}
+
+
+
+{/* RESPONSIVENESS */}
+
+
+@media screen and (min-width: 415px) and (max-width: 968px){
+
+    .rangeRow1{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rangeModel1{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 610px;
+    }
+
+    .rangeModel2{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 610px;
+    }
+
+    .helpToolLink{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 610px;
+    }
+
+    .rangeModel3{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 610px;
+    }
+
+    .rangeModel4{
+        display: none;
+    }
+
+    .rangeModel5{
+        display: none;
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 414px){
+  
+    .rangeRow1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rangeModel1{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 480px;
+    }
+
+    .rangeModel2{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 480px;
+    }
+
+    .helpToolLink{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 480px;
+    }
+
+    .rangeModel3{
+        margin-bottom: 5%;
+        width: 70%;
+        height: 480px;
+    }
+
+    .rangeModel4{
+        display: none;
+    }
+
+    .rangeModel5{
+        display: none;
+    }
+  
+  }
