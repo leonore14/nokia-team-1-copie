@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../Banner';
+import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
 import { NavLink } from 'react-router-dom';
 
@@ -18,7 +19,7 @@ class Home extends Component {
   }
 
 getPhone = () => {
-    fetch (`https://nokia-hackathon.herokuapp.com/phones`)
+    fetch (`https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones`)
     .then(response => response.json())
     .then(data => {
         this.setState({data})
@@ -31,13 +32,8 @@ render() {
 
   return (
 
-    <div className="SelectorToolDiv">
+    <div className="home">
         <Banner />
-        
-        <div>
-          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
-
-        </div>
 
         <div className="phones">
                 {this.state.data.map(phone => 
@@ -47,6 +43,12 @@ render() {
                         shortDescription={phone.battery} 
                     />
                 )}
+        </div>
+
+        <BannerBottom />
+
+        <div>
+          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
         </div>
 
     </div>
