@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './SelectorToolStyle.css';
 import NokiaMultico from '../images/YourMatch.jpg';
 import { NavLink } from 'react-router-dom';
@@ -7,9 +7,33 @@ import batteryIcon from '../icons/battery.png';
 import gamesIcon from '../icons/games.png';
  
 
-function MatchResult() {
+class MatchResult2 extends Component {
 
-  return (
+	
+    constructor(props) {
+      super(props);
+      this.state = {
+        data :null,
+      };
+    }
+  
+      componentDidMount() {
+          this.getPhone();
+      }
+  
+      getPhone = () => {
+          fetch(`https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones`)
+              .then(response => response.json())
+              .then(data => {
+                  this.setState({ data })
+              })
+      }
+
+
+
+      render() {
+
+		return (
     <>
       <div className="matchResultDiv">
 
@@ -24,16 +48,16 @@ function MatchResult() {
             </div>
             <div className='matchResultInfos'>
                 <div className='matchCarousel'>
-                    <img className='matchSmallImg' ></img>
+                    {this.state.data && <img src={this.state.data[3].pictures[0]} /> }
                 </div>
                 <div className='matchTextTitles'>
-                    <h3 className='matchModelName'><strong>Nokia 3310</strong></h3>
-                    <h4><strong>59 €</strong></h4>
+                    <h3 className='matchModelName'>Nokia 3310</h3>
+                    <h3 className='matchModelName'>59 €</h3>
                 </div>
                 <div className='matchModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
-                    <p>description</p>
+                    <p>Perfect phone for nostalgic</p>
+                    <p>of the Snake !</p>
+                    <p>Robust phone & Easy to use.</p>
                 </div>
                 <div className='matchIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -54,5 +78,5 @@ function MatchResult() {
 
   );
 }
-
-export default MatchResult;
+}
+export default MatchResult2;
