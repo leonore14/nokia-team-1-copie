@@ -17,7 +17,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-	  data : [],
+	  data : null,
 	  isShowingRange : false,
     };
   }
@@ -27,7 +27,7 @@ class Home extends Component {
 	}
 
 	getPhone = () => {
-		fetch(`https://nokia-hackathon.herokuapp.com/phones`)
+		fetch(`https://cors-anywhere.herokuapp.com/https://nokia-hackathon.herokuapp.com/phones`)
 			.then(response => response.json())
 			.then(data => {
 				this.setState({ data })
@@ -41,30 +41,27 @@ class Home extends Component {
 	render() {
 
 		return (
-      <div className="home">
+      	<div className="home">
         <Banner />
 		<div className="containerHome"></div>
 		<Carousel />
-        <TeamFavorite />
+        {this.state.data && <TeamFavorite
+          picture1={this.state.data[0].pictures[0]}
+          picture2={this.state.data[0].pictures[1]}
+          picture3={this.state.data[0].pictures[2]}
+          modelName={this.state.data[0].model}
+          battery={this.state.data[0].battery}
+          variant={this.state.data[0].variant}
+        />
+        }
         <BannerBottom />
 		
 		<FullRange1 />
 		<FullRange2 handleClick={this.handleClick} />
 
 		{this.state.isShowingRange &&  <FullRange3 /> }
-
-    
-				<div className="phones">
-					{this.state.data.map(phone =>
-						<OnePhone
-							picture={phone.pictures}
-							name={phone.model}
-							shortDescription={phone.battery}
-						/>
-					)}
-				</div>
-
-			</div>
+		
+		</div>
 
 		);
 	}

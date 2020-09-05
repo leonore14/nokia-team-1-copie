@@ -27,6 +27,11 @@
 	position: relative;
 }
 
+.teamFavorite__center img{
+	width: 30%;
+	align-content: center;
+}
+
 .teamFavorite__infoRight {
 	background-color: #7d977d;
 	color:white;

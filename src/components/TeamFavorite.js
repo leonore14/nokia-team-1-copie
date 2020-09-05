@@ -6,7 +6,9 @@ import games from './icons/games_white.png';
 import { Button } from '@material-ui/core';
 
 
-function TeamFavorite() {
+
+
+function TeamFavorite ({ picture1, picture2, picture3, modelName }) {
 	return (
 		<>
 			<div className='emptyContainer'></div>
@@ -21,13 +23,15 @@ function TeamFavorite() {
 
 
 					<div className="teamFavorite__center">
-						<img src="" alt="" />
+						<img src={picture1} />
+						<img src={picture2} />
+						<img src={picture3} />
 					</div>
 
 					<div className="teamFavorite__infoRight">
 							<div className="teamFavorit__descr">
 
-								<h3><strong>Model Name</strong></h3>
+								<h3><strong>{modelName}</strong></h3>
 								<br />
 								<h3><strong>Price: 100$</strong></h3>
 								<br />
