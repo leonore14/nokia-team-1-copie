@@ -4,6 +4,8 @@ import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
 import TeamFavorite from '../TeamFavorite';
 import FullRange from '../FullRange/FullRange';
+import Carousel from '../Carousel/Carousel';
+import './HomeStyle.css';
 
 
 class Home extends Component {
@@ -33,6 +35,8 @@ class Home extends Component {
 		return (
       <div className="home">
         <Banner />
+		<div className="containerHome"></div>
+		<Carousel />
         <TeamFavorite />
         <BannerBottom />
 		<FullRange />
