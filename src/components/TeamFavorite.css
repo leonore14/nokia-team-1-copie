@@ -18,7 +18,7 @@
 }
 
 .teamFavorite__center {
-	background-color: blue;
+	background-color: #857BAF;
 	z-index: 3;
 	width: 70%;
 	margin-left: 6%;
@@ -29,6 +29,7 @@
 
 .teamFavorite__infoRight {
 	background-color: #7d977d;
+	color:white;
     z-index: 4;
 	width: 27%;
 	height: 450px;
@@ -53,10 +54,14 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-left: auto;
+	margin-right:auto;
 } 
 
 .teamFavorite__images > img {
-	width: 25%;
+	width: 100%;
+	margin-right: 7%;
+	margin-left: 7%;
 }
 
 .teamFavorite__button{
@@ -72,4 +77,79 @@
 
 .emptyContainerHigh{
 	height: 150px;
+}
+
+
+.teamFavorite__phone2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.teamFavorite__center2 {
+	background-color: #DEDDE3;
+	z-index: 3;
+	width: 70%;
+	margin-right: 6%;
+	height: 630px;
+	margin-left: auto;
+	position: relative;
+}
+
+.teamFavorite__infoRight2 {
+	background-color: #857BAF;
+	color:white;
+    z-index: 4;
+	width: 27%;
+	height: 450px;
+    margin-right: 60%;
+	margin-left: auto;
+	padding: 2%;
+	position: absolute ;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.teamFavorite__phone3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 2;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.teamFavorite__center3 {
+	background-color: #323138;
+	z-index: 3;
+	width: 70%;
+	margin-left: 6%;
+	height: 630px;
+	margin-right: auto;
+	position: relative;
+}
+
+.teamFavorite__infoRight3 {
+	background-color: #587179;
+	color:white;
+    z-index: 4;
+	width: 27%;
+	height: 450px;
+    margin-left: 55%;
+	margin-right: auto;
+	padding: 2%;
+	position: absolute ;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
