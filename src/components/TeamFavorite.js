@@ -8,27 +8,27 @@ import { Button } from '@material-ui/core';
 function TeamFavorite() {
 	return (
 		<>
+			<div className='emptyContainer'></div>
 
 			<div className="componentTeam">
+				
 				<div className="teamFavorite__title">
 					<h1>Team's favorites</h1>
 				</div>
-
 
 				<div className="teamFavorite__phone1">
 
 
 					<div className="teamFavorite__center">
-						<div className="teamFavorite__carousel">
-							<img src="" alt="" />
-						</div>
+						<img src="" alt="" />
+					</div>
 
-						<div className="teamFavorite__infoRight">
+					<div className="teamFavorite__infoRight">
 							<div className="teamFavorit__descr">
 
-								<h3>Model Name</h3>
+								<h3><strong>Model Name</strong></h3>
 								<br />
-								<h3>Price: 100$</h3>
+								<h3><strong>Price: 100$</strong></h3>
 								<br />
 								<p>Description</p>
 								<p>Description</p>
@@ -38,14 +38,13 @@ function TeamFavorite() {
 								<img src={battery} alt="battery" />
 								<img src={camera} alt="camera" />
 								<img src={games} alt="games" />
-
 							</div>
-							<Button className="teamFavorite__button">Add to bag</Button>
-
-						</div>
+							<button className="teamFavorite__button">Add to bag</button>
 					</div>
+					
 				</div >
 			</div>
+			<div className='emptyContainerHigh'></div>
 		</>
 	)
 }
