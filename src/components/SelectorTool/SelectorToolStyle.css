@@ -1,22 +1,21 @@
-.selectorToolDiv{
+
+.selectorToolChoicesDiv{
     background-color: #5C747E;
 }
 
 .topTextSelector{
     margin-top: 5%;
-    margin-left: 5%;;
+    margin-left: 5%;
     margin-right : auto;
     color : white;
 }
 
 .tableSelector{
     margin-top: 2%;
-    margin-left: 5%;
     margin-bottom : 5%;
     margin-right : auto;
+    margin-left: 5%; 
     color : white;
-    align-self: center;
-    justify-self: center;
     text-align: center ;
     display: flex;
     flex-direction: row;
@@ -26,7 +25,6 @@
 
 .firstrow{
     text-align: right;
-    margin-left : 10%;
     display: flex;
     flex-direction: column;  
 }
@@ -34,10 +32,9 @@
 .verticalText{
     writing-mode: tb-rl;
     transform: rotate(180deg);
-    margin-top : 80%;
     margin-top : 20%;
-    width : 180px;
-    height : 180px;
+    width : 160px;
+    height : 160px;
     padding: 8%;
     padding-top : 12%;
     display: flex;
@@ -56,8 +53,8 @@
 
 .featureIcons{
     margin-top : 20%;
-    width : 180px;
-    height : 180px;
+    width : 160px;
+    height : 160px;
     border : 0.1em solid white ;
     padding: 8%;
     padding-top : 12%;
@@ -67,3 +64,252 @@
     text-align: center;
     justify-content: space-around;
 }
+
+.matchResultDiv{
+    margin-bottom:3%;
+}
+
+.matchResultTitle{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right : auto;
+    margin-bottom: 3%;
+}
+
+.matchResultImages{
+    display: flex;
+    flex-direction: row;
+}
+
+.matchMainImg{
+    width: 70%;
+}
+
+.matchMainImg img{
+    width:100%;
+}
+
+.matchResultInfos{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:5%;
+    margin-bottom:5%;
+    justify-content: space-around;
+}
+
+.matchCarousel{
+    height: 35%;
+    border: none;
+}
+
+.matchModelName{
+    margin-bottom:7%;
+}
+
+.matchIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.matchIcons img{
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.matchAddButton{
+    margin-top: 1%;
+    padding-top: 0.7%;
+    padding-bottom:0.7%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border: none;
+    border-radius : 25px;
+    background-color: #F76568;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.fullRangeButton{
+    margin-top: 5%;
+    padding-top: 0.7%;
+    padding-bottom:0.7%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border: solid black 1px;
+    border-radius : 25px;
+    background-color: white;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+.fullRangeNavLink{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+{/* SELECTOR RESPONSIVENESS */}
+
+  @media screen and (min-width: 415px) and (max-width: 768px){
+
+    .selectorToolChoicesDiv{
+        margin-bottom: 5%;
+    }
+
+    .topTextSelector {
+        width: 60%;
+    }
+    
+    .tableSelector{
+        margin-left: 0%; 
+    }
+    
+    .verticalText{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        font-size: 0.8rem;
+    }
+    
+    .featureIcons{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        padding: 4%;
+        justify-content: space-around;
+    }
+
+    .featureIcons h5{
+        font-size: 0.6rem;
+    }
+
+    .featureIcons p{
+        display: none;
+    }
+    
+    .matchResultImages{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .matchMainImg{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .matchCarousel{
+        margin-bottom: 8%;
+    }
+
+    .matchTextTitles{
+        margin-bottom: 8%;
+    }
+
+    .matchModelDescription{
+        margin-bottom: 8%;
+    }
+
+    .matchIcons{
+        margin-bottom: 8%;
+    }
+
+    .matchAddButton{
+        margin-bottom: 8%;
+    }
+
+    .fullRangeButton{
+        margin-bottom: 8%;
+    }
+
+  }
+  
+  
+  @media screen and (max-width: 414px){
+      
+    .selectorToolChoicesDiv{
+        margin-bottom: 5%;
+    }
+
+    .topTextSelector {
+        width: 60%;
+    }
+    
+    .tableSelector{
+        margin-left: 0%; 
+    }
+    
+    .verticalText{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        font-size: 0.8rem;
+    }
+    
+    .featureIcons{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        padding: 4%;
+        justify-content: space-around;
+    }
+
+    .featureIcons h5{
+        font-size: 0.6rem;
+    }
+
+    .featureIcons p{
+        display: none;
+    }
+    
+    .matchResultImages{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .matchMainImg{
+        width: 80%;
+        margin-bottom: 10%;
+    }
+
+    .matchCarousel{
+        margin-bottom: 8%;
+    }
+
+    .matchTextTitles{
+        margin-bottom: 8%;
+    }
+
+    .matchModelDescription{
+        margin-bottom: 8%;
+    }
+
+    .matchIcons{
+        margin-bottom: 8%;
+    }
+
+    .matchAddButton{
+        margin-bottom: 8%;
+    }
+
+    .fullRangeButton{
+        margin-bottom: 8%;
+    }
+
+
+
+  }
+
