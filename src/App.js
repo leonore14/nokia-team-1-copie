@@ -5,7 +5,10 @@ import Navbar from './components/NavBar/Navbar';
 import SelectorTool from './components/SelectorTool/SelectorTool';
 
 import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
+
+import Carousel from './components/Carousel/Carousel'
+import Footer from './components/Footer/Footer'
+=======
 
 
 
@@ -21,6 +24,7 @@ function App() {
         <Route path='/SelectorTool' component={SelectorTool} />
        
       </Switch>
+      <Carousel />
       <Footer />
 
     </div>
