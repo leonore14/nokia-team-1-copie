@@ -18,10 +18,29 @@
 .rangeModel1{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     width: 33%;
     background-color: #323138;
     color: white;
     height: 650px;
+}
+
+.rangeImg {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 110%;
+}
+
+.longBoi {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 100%;
 }
 
 .rangeModel2{

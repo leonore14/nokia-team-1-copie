@@ -6,7 +6,7 @@ import './FullRangeStyle.css';
 import { NavLink } from 'react-router-dom';
  
 
-function FullRange2() {
+function FullRange3({ data }) {
 
   return (
     <>
@@ -15,15 +15,14 @@ function FullRange2() {
         <div className='rangeRow1'>
             <div className='rangeModel1'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[5].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[5].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: {data[5].colors}</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -35,15 +34,14 @@ function FullRange2() {
 
             <div className='rangeModel2'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[6].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='longBoi' src={data[6].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: {data[6].colors}</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -55,15 +53,14 @@ function FullRange2() {
 
             <div className='rangeModel3'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[7].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[7].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: Pink</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -86,4 +83,4 @@ function FullRange2() {
   );
 }
 
-export default FullRange2;
+export default FullRange3;
