@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import Banner from '../Banner';
 import BannerBottom from '../BannerBottom';
@@ -33,10 +34,10 @@ class Home extends Component {
 			})
 	}
 
+
 	handleClick = () => {
 		this.setState({ isShowingRange: !this.state.isShowingRange })
 	}
-
 	render() {
 
 		return (

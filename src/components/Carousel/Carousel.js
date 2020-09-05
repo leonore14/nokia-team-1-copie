@@ -17,6 +17,9 @@ const Carousel = () => {
         x === -100*(sliderArr.length - 1) ? setX(0) : setX(x - 100)
     };
 
+    //setInterval(goRight, 5000)
+    
+
 
     
     return(
@@ -32,10 +35,10 @@ const Carousel = () => {
                 })
             }
             <button class="goLeft" onClick={goLeft}>
-            <i class="fas fa-chevron-left"></i>
+            <i class="gg-chevron-left"></i>
             </button>
             <button class="goRight" onClick={goRight}>
-            <i class="fas fa-chevron-left"></i>
+            <i class="gg-chevron-right"></i>
             </button>
         </div>
     )
