@@ -223,6 +223,14 @@ button a{
         justify-content: space-around;
     }
 
+    .selectedIcons{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        padding: 4%;
+        justify-content: space-around;
+    }
+
     .featureIcons h5{
         font-size: 0.6rem;
     }
@@ -230,6 +238,15 @@ button a{
     .featureIcons p{
         display: none;
     }
+
+    .selectedIcons h5{
+        font-size: 0.6rem;
+    }
+
+    .selectedIcons p{
+        display: none;
+    }
+
     
     .matchResultImages{
         flex-direction: column;
@@ -297,11 +314,28 @@ button a{
         justify-content: space-around;
     }
 
+    .selectedIcons{
+        margin-top : 20%;
+        width : 90px;
+        height : 90px;
+        padding: 4%;
+        justify-content: space-around;
+    }
+
+
     .featureIcons h5{
         font-size: 0.6rem;
     }
 
     .featureIcons p{
+        display: none;
+    }
+
+    .selectedIcons h5{
+        font-size: 0.6rem;
+    }
+
+    .selectedIcons p{
         display: none;
     }
     
