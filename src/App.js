@@ -5,7 +5,8 @@ import Navbar from './components/NavBar/Navbar';
 import SelectorTool from './components/SelectorTool/SelectorTool';
 
 import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+import BannerBottom from './components/BannerBottom';
 
 
 

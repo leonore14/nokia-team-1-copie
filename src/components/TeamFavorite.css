@@ -61,6 +61,7 @@
 
 .teamFavorite__button{
 	background-color: #f76568;
+	border: none;
 	border-radius: 25px;
 	color: #fff;
 	height: 2rem;
