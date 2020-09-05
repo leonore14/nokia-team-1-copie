@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../Banner';
+import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
 import { NavLink } from 'react-router-dom';
 import TeamFavorite from '../TeamFavorite';
@@ -7,12 +8,12 @@ import TeamFavorite from '../TeamFavorite';
 
 class Home extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			data: []
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      data : []
+    };
+  }
 
 	componentDidMount() {
 		this.getPhone();
@@ -27,19 +28,16 @@ class Home extends Component {
 	}
 
 
-
 	render() {
 
 		return (
-
-			<div className="SelectorToolDiv">
-				<Banner />
-
-				<TeamFavorite />
-				<div>
-					<NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
-
-				</div>
+      <div className="home">
+        <Banner />
+        <TeamFavorite />
+        <BannerBottom />
+        <div>
+          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
+        </div>
 
 				<div className="phones">
 					{this.state.data.map(phone =>
