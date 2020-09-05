@@ -19,6 +19,9 @@
 
 .goLeft {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -37,6 +40,9 @@
 
 .goRight {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -51,4 +57,52 @@
 .goRight:hover {
     background: rgba(0, 0, 0, 0.295);
     cursor: pointer;
+}
+
+.gg-chevron-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-right::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    transform: rotate(-45deg);
+    right: 6px;
+    top: 4px
+}
+
+.gg-chevron-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-left::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid;
+    border-left: 5px solid;
+    transform: rotate(45deg);
+    left: 6px;
+    top: 4px
 }
