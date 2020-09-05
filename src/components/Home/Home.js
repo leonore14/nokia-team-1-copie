@@ -12,6 +12,7 @@ import './HomeStyle.css';
 
 class Home extends Component {
 
+	
   constructor(props) {
     super(props);
     this.state = {
