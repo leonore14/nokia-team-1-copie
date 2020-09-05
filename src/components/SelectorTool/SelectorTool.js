@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SelectorToolStyle.css';
 import SelectorToolChoices from './SelectorToolChoices';
-import MatchResult from './MatchResult';
+import MatchResult2 from './MatchResult2';
 
 
 
@@ -17,7 +17,7 @@ function SelectorTool() {
     <>
     
         <SelectorToolChoices handleCount={handleCount} />
-        {count >= 4 &&  <MatchResult /> }
+        {count >= 4 &&  <MatchResult2 /> }
     
     </>
 

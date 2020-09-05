@@ -27,9 +27,56 @@
 	position: relative;
 }
 
-.teamFavorite__center img{
-	width: 30%;
-	align-content: center;
+.teamFavorite__center img:nth-child(1){
+	width: 42%;
+	margin-top: 6%;
+	margin-right:-17%;
+}
+.teamFavorite__center img:nth-child(2){
+	width: 42%;
+	margin-top: 6%;
+	margin-right:-10%;
+	margin-left: -5%;
+}
+.teamFavorite__center img:nth-child(3){
+	width: 42%;
+	margin-top: 6%;
+	margin-right:-10%;
+	margin-left: -5%;
+}
+
+.teamFavorite__center2 img:nth-child(1){
+	width: 42%;
+	margin-top: 6%;
+	margin-left:10%;
+}
+
+.teamFavorite__center2 img:nth-child(2){
+	width: 42%;
+	margin-top: 6%;
+	margin-left:-20%;
+}
+.teamFavorite__center2 img:nth-child(3){
+	width: 42%;
+	margin-top: 6%;
+	margin-left:-20%;
+}
+
+.teamFavorite__center3 img:nth-child(1){
+	width: 42%;
+	margin-top: 8%;
+	margin-right:-17%;
+}
+.teamFavorite__center3 img:nth-child(2){
+	width: 42%;
+	margin-top: 8%;
+	margin-right:-10%;
+}
+.teamFavorite__center3 img:nth-child(3){
+	width: 42%;
+	margin-top: 8%;
+	margin-right:-10%;
+	margin-left: -10%;
 }
 
 .teamFavorite__infoRight {
@@ -162,6 +209,128 @@
 
 {/* TEAM's FAV RESPONSIVENESS */}
 
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+
+	.teamFavorite__center img:nth-child(1){
+		width: 42%;
+		margin-top: 15%;
+		margin-right:-17%;
+	}
+	.teamFavorite__center img:nth-child(2){
+		width: 42%;
+		margin-top: 15%;
+		margin-right:-10%;
+		margin-left: -5%;
+	}
+	.teamFavorite__center img:nth-child(3){
+		width: 42%;
+		margin-top: 15%;
+		margin-right:-10%;
+		margin-left: -5%;
+	}
+	
+	.teamFavorite__center2 img:nth-child(1){
+		width: 42%;
+		margin-top: 19%;
+		margin-left:10%;
+	}
+	
+	.teamFavorite__center2 img:nth-child(2){
+		width: 42%;
+		margin-top: 19%;
+		margin-left:-20%;
+	}
+	.teamFavorite__center2 img:nth-child(3){
+		width: 42%;
+		margin-top: 19%;
+		margin-left:-20%;
+	}
+	
+	.teamFavorite__center3 img:nth-child(1){
+		width: 42%;
+		margin-top: 23%;
+		margin-right:-17%;
+	}
+	.teamFavorite__center3 img:nth-child(2){
+		width: 42%;
+		margin-top: 23%;
+		margin-right:-10%;
+	}
+	.teamFavorite__center3 img:nth-child(3){
+		width: 42%;
+		margin-top: 23%;
+		margin-right:-10%;
+		margin-left: -10%;
+	}
+	
+
+  }
+
+
+
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+
+	.teamFavorite__center img:nth-child(1){
+		width: 50%;
+		margin-top: 25%;
+		margin-left: -10%;
+		margin-right:-20%;
+	}
+	.teamFavorite__center img:nth-child(2){
+		width: 50%;
+		margin-top: 25%;
+		margin-right:-15%;
+		margin-left: -5%;
+	}
+	.teamFavorite__center img:nth-child(3){
+		width: 50%;
+		margin-top: 25%;
+		margin-right:-10%;
+		margin-left: -5%;
+	}
+	
+	.teamFavorite__center2 img:nth-child(1){
+		width: 50%;
+		margin-top: 25%;
+		margin-left:5%;
+	}
+	
+	.teamFavorite__center2 img:nth-child(2){
+		width: 50%;
+		margin-top: 25%;;
+		margin-left:-27%;
+		margin-right: -20%
+	}
+	.teamFavorite__center2 img:nth-child(3){
+		width: 50%;
+		margin-top: 25%;
+		margin-left:-8%;
+	}
+	
+	.teamFavorite__center3 img:nth-child(1){
+		width: 50%;
+		margin-top: 27%;
+		margin-right:-20%;
+		margin-left: -10%;
+	}
+	.teamFavorite__center3 img:nth-child(2){
+		width: 50%;
+		margin-top: 27%;
+		margin-right:-15%;
+	}
+	.teamFavorite__center3 img:nth-child(3){
+		width: 50%;
+		margin-top: 27%;
+		margin-right:-10%;
+		margin-left: -10%;
+	}
+	
+
+  }
+
+
+
 @media screen and (min-width: 415px) and (max-width: 768px){
 
 	.teamFavorite__infoRight{
@@ -187,6 +356,67 @@
 		width: 70%;
 		margin-right: 7%;
 		margin-left: 7%;
+	}
+
+	.teamFavorite__center{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.teamFavorite__center2{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.teamFavorite__center3{
+		display:flex;
+		flex-direction: column;
+	}
+
+
+
+	.teamFavorite__center img:nth-child(1){
+		width: 55%;
+		margin-top: 20%;
+		margin-left: 5%;
+	}
+
+	.teamFavorite__center img:nth-child(2){
+		width: 55%;
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+	.teamFavorite__center img:nth-child(3){
+		display: none
+	}
+	
+	.teamFavorite__center2 img:nth-child(1){
+		width: 55%;
+		margin-top: 20%;
+		margin-left: 30%;
+	}
+	
+	.teamFavorite__center2 img:nth-child(2){
+		width: 55%;
+		margin-top: 10%;
+		margin-left: 30%;
+	}
+	.teamFavorite__center2 img:nth-child(3){
+		display: none
+	}
+	
+	.teamFavorite__center3 img:nth-child(1){
+		width: 55%;
+		margin-top: 20%;
+		margin-left: 5%;
+	}
+	.teamFavorite__center3 img:nth-child(2){
+		width: 55%;
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+	.teamFavorite__center3 img:nth-child(3){
+		display: none
 	}
 
   }

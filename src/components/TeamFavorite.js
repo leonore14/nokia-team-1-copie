@@ -8,7 +8,7 @@ import { Button } from '@material-ui/core';
 
 
 
-function TeamFavorite ({ picture1, picture2, picture3, modelName }) {
+function TeamFavorite ({ picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8, picture9, modelName }) {
 	return (
 		<>
 			<div className='emptyContainer'></div>
@@ -33,11 +33,11 @@ function TeamFavorite ({ picture1, picture2, picture3, modelName }) {
 
 								<h3><strong>{modelName}</strong></h3>
 								<br />
-								<h3><strong>Price: 100$</strong></h3>
+								<h3><strong>Price: 100€</strong></h3>
 								<br />
-								<p>Description</p>
-								<p>Description</p>
-								<p>Description</p>
+								<p>Easy to Use</p>
+								<p>High quality camera</p>
+								<p>Long lasting battery</p>
 							</div>
 							<div className="teamFavorite__images">
 								<img src={battery} alt="battery" />
@@ -57,20 +57,22 @@ function TeamFavorite ({ picture1, picture2, picture3, modelName }) {
 				<div className="teamFavorite__phone2">
 
 
-					<div className="teamFavorite__center2">
-						<img src="" alt="" />
+				<div className="teamFavorite__center2">
+						<img src={picture4} />
+						<img src={picture5} />
+						<img src={picture6} />
 					</div>
 
 					<div className="teamFavorite__infoRight2">
 							<div className="teamFavorit__descr">
 
-								<h3><strong>Model Name</strong></h3>
+								<h3><strong>Nokia 800 Tough</strong></h3>
 								<br />
-								<h3><strong>Price: 100$</strong></h3>
+								<h3><strong>Price: 100€</strong></h3>
 								<br />
-								<p>Description</p>
-								<p>Description</p>
-								<p>Description</p>
+								<p>Super resistant</p>
+								<p>Waterproof</p>
+								<p>Radio</p>
 							</div>
 							<div className="teamFavorite__images">
 								<img src={battery} alt="battery" />
@@ -86,20 +88,22 @@ function TeamFavorite ({ picture1, picture2, picture3, modelName }) {
 
 				<div className="teamFavorite__phone3">
 
-					<div className="teamFavorite__center3">
-						<img src="" alt="" />
+				<div className="teamFavorite__center3">
+						<img src={picture7} />
+						<img src={picture8} />
+						<img src={picture9} />
 					</div>
 
 					<div className="teamFavorite__infoRight3">
 						<div className="teamFavorit__descr">
 
-							<h3><strong>Model Name</strong></h3>
+							<h3><strong>Nokia 130</strong></h3>
 							<br />
-							<h3><strong>Price: 100$</strong></h3>
+							<h3><strong>Price: 100€</strong></h3>
 							<br />
-							<p>Description</p>
-							<p>Description</p>
-							<p>Description</p>
+							<p>High quality camera</p>
+							<p>Micro USB</p>
+							<p>Removable battery</p>
 						</div>
 						<div className="teamFavorite__images">
 							<img src={battery} alt="battery" />

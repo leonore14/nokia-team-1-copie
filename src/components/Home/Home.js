@@ -46,10 +46,16 @@ class Home extends Component {
 		<div className="containerHome"></div>
 		<Carousel />
         {this.state.data && <TeamFavorite
-          picture1={this.state.data[0].pictures[0]}
-          picture2={this.state.data[0].pictures[1]}
-          picture3={this.state.data[0].pictures[2]}
-          modelName={this.state.data[0].model}
+          picture1={this.state.data[6].pictures[0]}
+          picture2={this.state.data[6].pictures[1]}
+		  picture3={this.state.data[6].pictures[2]}
+		  picture4={this.state.data[5].pictures[0]}
+          picture5={this.state.data[5].pictures[1]}
+		  picture6={this.state.data[5].pictures[2]}
+		  picture7={this.state.data[8].pictures[3]}
+          picture8={this.state.data[8].pictures[4]}
+          picture9={this.state.data[8].pictures[5]}
+          modelName={this.state.data[6].model}
           battery={this.state.data[0].battery}
           variant={this.state.data[0].variant}
         />

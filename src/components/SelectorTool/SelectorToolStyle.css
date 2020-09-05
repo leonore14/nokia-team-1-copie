@@ -111,24 +111,39 @@
     align-items: center;
     margin-top:5%;
     margin-bottom:5%;
-    justify-content: space-around;
+    height: 100%
 }
 
 .matchCarousel{
     height: 35%;
-    border: none;
+    text-align: center;
+}
+
+.matchCarousel img{
+    width: 60%;
+    margin-top: -20%;
+}
+
+.matchTextTitles{
+    text-align: center;
 }
 
 .matchModelName{
     margin-bottom:7%;
 }
 
+.matchModelDescription{
+    text-align: center;
+}
+
 .matchIcons {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 4%;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom: 4%;
 }
 
 .matchIcons img{
