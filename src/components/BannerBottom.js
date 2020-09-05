@@ -5,7 +5,7 @@ import './BannerBottom.css';
 
 function BannerBottom() {
 	return (
-		<div className="bannerBottom">
+		<div className="bannerBottom" >
 			<div className="bannerBottom__info">
 				<h5>Discover our full range</h5>
 				<h5>Of classic phones</h5>

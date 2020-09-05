@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import Navbar from './components/NavBar/Navbar';
 import SelectorTool from './components/SelectorTool/SelectorTool';
 
 import Home from './components/Home/Home';
+
 import Carousel from './components/Carousel/Carousel'
 import Footer from './components/Footer/Footer'
+=======
+
 
 
 
@@ -19,6 +22,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/SelectorTool' component={SelectorTool} />
+       
       </Switch>
       <Carousel />
       <Footer />

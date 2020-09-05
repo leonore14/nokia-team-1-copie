@@ -1,0 +1,166 @@
+.FullRangeDiv{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.rangeRow1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rangeModel1{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: #323138;
+    color: white;
+    height: 650px;
+}
+
+.rangeModel2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+    margin-right:2%;
+    background-color: #857BAF;
+    color: white;
+    height: 650px;
+}
+
+.helpToolLink{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: #DEDDE3;
+    height: 650px;
+}
+
+.selectorContainer{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: #587179;
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.selectorContainer a{
+    text-decoration: none;
+    color: #587179;
+}
+
+
+.helpTitle{
+    text-align: center;
+    text-decoration: none;
+    color: #587179;
+    margin-bottom: 5%;
+    font-size:2.3rem;
+}
+
+.helpToolLink img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+.selectorToolButton{
+    padding-top: 2%;
+    padding-bottom:2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    border: none;
+    border-radius : 25px;
+    background-color: #587179;
+    color:white;
+    align-self: center;
+    font-size:1.05rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.rangeModelTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:8%;
+    margin-bottom:5%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.rangeModelName{
+    text-align: center;
+    margin-bottom:7%;
+}
+
+.rangeCarousel{
+    height: 35%;
+    border: none;
+}
+
+.rangeModelDescription{
+    text-align: center;
+}
+
+.rangeModelIcons {
+    display: flex;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.rangeModelIcons img{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.rangeModelAddButton{
+    margin-top: 1%;
+    padding-top: 0.7%;
+    padding-bottom:0.7%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border: none;
+    border-radius : 25px;
+    background-color: #F76568;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+
+
+
+
+.showMoreButton{
+    margin-top: 10%;
+    padding-top: 0.7%;
+    padding-bottom:0.7%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border: solid black 1px;
+    border-radius : 25px;
+    background-color: white;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
