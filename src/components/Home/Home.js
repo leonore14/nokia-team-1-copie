@@ -15,7 +15,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data : []
+	  data : [],
+	  isShowingRange : false,
     };
   }
 
@@ -31,6 +32,9 @@ class Home extends Component {
 			})
 	}
 
+	handleClick = () => {
+		this.setState({ isShowingRange: !this.state.isShowingRange })
+	}
 
 	render() {
 
@@ -41,9 +45,12 @@ class Home extends Component {
 		<Carousel />
         <TeamFavorite />
         <BannerBottom />
+		
 		<FullRange1 />
-		<FullRange2 />
-		<FullRange3 />
+		<FullRange2 handleClick={this.handleClick} />
+
+		{this.state.isShowingRange &&  <FullRange3 /> }
+
     
 				<div className="phones">
 					{this.state.data.map(phone =>
