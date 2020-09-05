@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Banner from '../Banner';
 import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
-import { NavLink } from 'react-router-dom';
 import TeamFavorite from '../TeamFavorite';
+import FullRange from '../FullRange/FullRange';
 
 
 class Home extends Component {
@@ -35,10 +35,8 @@ class Home extends Component {
         <Banner />
         <TeamFavorite />
         <BannerBottom />
-        <div>
-          <NavLink to='/SelectorTool' activeclassname='active' >link to selector tool !!!</NavLink>
-        </div>
-
+		<FullRange />
+    
 				<div className="phones">
 					{this.state.data.map(phone =>
 						<OnePhone
