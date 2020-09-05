@@ -3,7 +3,9 @@ import Banner from '../Banner';
 import BannerBottom from '../BannerBottom';
 import OnePhone from './OnePhone';
 import TeamFavorite from '../TeamFavorite';
-import FullRange from '../FullRange/FullRange';
+import FullRange1 from '../FullRange/FullRange1';
+import FullRange2 from '../FullRange/FullRange2';
+import FullRange3 from '../FullRange/FullRange3';
 import Carousel from '../Carousel/Carousel';
 import './HomeStyle.css';
 
@@ -39,7 +41,9 @@ class Home extends Component {
 		<Carousel />
         <TeamFavorite />
         <BannerBottom />
-		<FullRange />
+		<FullRange1 />
+		<FullRange2 />
+		<FullRange3 />
     
 				<div className="phones">
 					{this.state.data.map(phone =>

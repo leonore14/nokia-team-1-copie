@@ -7,7 +7,7 @@ import HelpToolLink from '../images/HELP-logo.gif';
 import { NavLink } from 'react-router-dom';
  
 
-function FullRange() {
+function FullRange1() {
 
   return (
     <>
@@ -66,8 +66,6 @@ function FullRange() {
 
         </div>
 
-        <button className='showMoreButton'>Show more</button>
-
       </div>
     
     </>
@@ -75,4 +73,4 @@ function FullRange() {
   );
 }
 
-export default FullRange;
+export default FullRange1;
