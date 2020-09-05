@@ -7,7 +7,7 @@ import HelpToolLink from '../images/HELP-logo.gif';
 import { NavLink } from 'react-router-dom';
  
 
-function FullRange1() {
+function FullRange1({data}) {
 
   return (
     <>
@@ -16,15 +16,14 @@ function FullRange1() {
         <div className='rangeRow1'>
             <div className='rangeModel1'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[0].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[0].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                    <p>Available Colors: {data[0].colors}</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -36,15 +35,14 @@ function FullRange1() {
 
             <div className='rangeModel2'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[1].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[1].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: {data[1].colors}</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>

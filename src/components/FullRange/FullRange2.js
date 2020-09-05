@@ -7,7 +7,7 @@ import HelpToolLink from '../images/HELP-logo.gif';
 import { NavLink } from 'react-router-dom';
  
 
-function FullRange2({ handleClick }) {
+function FullRange2({ handleClick, data }) {
 
   return (
     <>
@@ -16,15 +16,14 @@ function FullRange2({ handleClick }) {
         <div className='rangeRow1'>
             <div className='rangeModel3'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[2].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[2].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: {data[2].colors}</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -36,15 +35,14 @@ function FullRange2({ handleClick }) {
 
             <div className='rangeModel4'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[3].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[3].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: Yellow</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>
@@ -56,15 +54,14 @@ function FullRange2({ handleClick }) {
 
             <div className='rangeModel5'>
                 <div className='rangeModelTitles'>
-                    <h3 className='matchModelName'><strong>model</strong></h3>
+                    <h3 className='matchModelName'><strong>{data[4].model}</strong></h3>
                     <h4><strong>price €</strong></h4>
                 </div>
                 <div className='rangeCarousel'>
-                    <img className='rangeImg'></img>
+                    <img className='rangeImg' src={data[4].pictures[0]}></img>
                 </div>
                 <div className='rangeModelDescription'>
-                    <p>description</p>
-                    <p>description</p>
+                <p>Available Colors: Dark Grey</p>
                 </div>
                 <div className='rangeModelIcons'>
                     <img src={clearTouch} alt='clearTouch'></img>

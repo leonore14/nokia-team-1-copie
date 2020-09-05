@@ -56,10 +56,10 @@ class Home extends Component {
         }
         <BannerBottom />
 		
-		<FullRange1 />
-		<FullRange2 handleClick={this.handleClick} />
+		{this.state.data && <FullRange1 data={this.state.data}/>}
+		{this.state.data && <FullRange2 handleClick={this.handleClick} data={this.state.data}/>}
 
-		{this.state.isShowingRange &&  <FullRange3 /> }
+		{this.state.isShowingRange &&  <FullRange3 data={this.state.data}/> }
 		
 		</div>
 
