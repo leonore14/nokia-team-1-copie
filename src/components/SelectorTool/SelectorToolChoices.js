@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SelectorToolStyle.css';
 import euro from '../icons/€_white.png';
 import euroeuro from '../icons/€€_white.png';
@@ -9,10 +9,38 @@ import durability from '../icons/durability_white.png';
 import games from '../icons/games_white.png';
 import camera from '../icons/camera_white.png';
 import music from '../icons/music_white.png';
+import adventurer from '../icons/adventurer.png';
+import ladytalking from '../icons/ladytalking.png';
+import kidplaying from '../icons/kidplaying.png';
 
 
 
-function SelectorTool() {
+function SelectorToolChoices({ handleCount }) {
+
+  const [ isSelected1, setIsSelected1 ] = useState(false)
+  const [ isSelected2, setIsSelected2 ] = useState(false)
+  const [ isSelected3, setIsSelected3 ] = useState(false)
+  const [ isSelected4, setIsSelected4 ] = useState(false)
+
+  const handleSelection1 = () => {
+    setIsSelected1(!isSelected1)
+    handleCount()
+  }
+
+  const handleSelection2 = () => {
+    setIsSelected2(!isSelected2)
+    handleCount()
+  }
+
+  const handleSelection3 = () => {
+    setIsSelected3(!isSelected3)
+    handleCount()
+  }
+  const handleSelection4 = () => {
+    setIsSelected4(!isSelected4)
+    handleCount()
+  }
+  
 
   return (
     <>
@@ -43,12 +71,12 @@ function SelectorTool() {
 
           <div className='otherRows'>
             <div className='featureIcons'>
-              <img src={euro}></img>
+              <img src={ladytalking}></img>
               <br></br>
               <h5>Stay Connected</h5>
               <p>Talk easily with relatives</p>
             </div>
-            <div className='featureIcons'>
+            <div className={isSelected1 ? 'selectedIcons' : 'featureIcons'} onClick={handleSelection1}>
               <img src={euro}></img>
               <br></br>
               <h5>Good Deal</h5>
@@ -60,7 +88,7 @@ function SelectorTool() {
               <h5>4G</h5>
               <p>Get fast connection</p>
             </div>
-            <div className='featureIcons'>
+            <div className={isSelected2 ? 'selectedIcons' : 'featureIcons'} onClick={handleSelection2}>
               <img src={games}></img>
               <br></br>
               <h5>Games</h5>
@@ -70,7 +98,7 @@ function SelectorTool() {
 
           <div className='otherRows'>
             <div className='featureIcons'>
-              <img src={euroeuro}></img>
+              <img src={adventurer}></img>
               <br></br>
               <h5>Live Adventures</h5>
               <p>Resistant to any journey</p>
@@ -81,7 +109,7 @@ function SelectorTool() {
               <h5>Medium</h5>
               <p>Medium price</p> 
             </div> 
-            <div className='featureIcons'>
+            <div className={isSelected3 ? 'selectedIcons' : 'featureIcons'} onClick={handleSelection3}>
               <img src={battery}></img>
               <br></br>
               <h5>Battery</h5>
@@ -96,8 +124,8 @@ function SelectorTool() {
           </div>
 
           <div className='otherRows'>
-            <div className='featureIcons'>
-              <img src={euroeuroeuro}></img>
+            <div className={isSelected4 ? 'selectedIcons' : 'featureIcons'} onClick={handleSelection4}>
+              <img src={kidplaying}></img>
               <br></br>
               <h5>Have fun</h5>
               <p>Easy to use, easy to play</p>
@@ -133,4 +161,4 @@ function SelectorTool() {
   );
 }
 
-export default SelectorTool;
+export default SelectorToolChoices;
