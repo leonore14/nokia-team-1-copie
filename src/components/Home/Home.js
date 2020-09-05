@@ -15,7 +15,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data : []
+	  data : [],
+	  isShowingRange : false,
     };
   }
 
@@ -31,8 +32,15 @@ class Home extends Component {
 			})
 	}
 
+<<<<<<< HEAD
 	
 	
+=======
+	handleClick = () => {
+		this.setState({ isShowingRange: !this.state.isShowingRange })
+	}
+
+>>>>>>> 20995f93e5b1cc192fff27d345c2ea897ad866e6
 	render() {
 
 		return (
@@ -42,9 +50,12 @@ class Home extends Component {
 		<Carousel />
         <TeamFavorite />
         <BannerBottom />
+		
 		<FullRange1 />
-		<FullRange2 />
-		<FullRange3 />
+		<FullRange2 handleClick={this.handleClick} />
+
+		{this.state.isShowingRange &&  <FullRange3 /> }
+
     
 				<div className="phones">
 					{this.state.data.map(phone =>
