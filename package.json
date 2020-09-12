@@ -15,7 +15,7 @@
     "react-router-hash-link": "^2.0.0",
     "react-scripts": "3.4.3",
     "react-scrollable-anchor": "^0.6.1",
-    "homepage": "http://leonore14.github.io/nokia-team-1-copie"
+    "homepage": "http://leonore14.github.io/nokia-team-1-hackathon"
   },
   "scripts": {
     "start": "react-scripts start",
