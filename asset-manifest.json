@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a24d82f2.chunk.css",
+    "main.js": "/static/js/main.02ab51c0.chunk.js",
+    "main.js.map": "/static/js/main.02ab51c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98744d38.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98744d38.js.map",
+    "static/js/2.20d7556d.chunk.js": "/static/js/2.20d7556d.chunk.js",
+    "static/js/2.20d7556d.chunk.js.map": "/static/js/2.20d7556d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b93ea94a369463513144496de6a1cff7.js": "/precache-manifest.b93ea94a369463513144496de6a1cff7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a24d82f2.chunk.css.map": "/static/css/main.a24d82f2.chunk.css.map",
+    "static/js/2.20d7556d.chunk.js.LICENSE.txt": "/static/js/2.20d7556d.chunk.js.LICENSE.txt",
+    "static/media/1.4efaa061.jpg": "/static/media/1.4efaa061.jpg",
+    "static/media/2.0b4d8863.jpg": "/static/media/2.0b4d8863.jpg",
+    "static/media/3.643692e2.jpg": "/static/media/3.643692e2.jpg",
+    "static/media/4.d5bfaed6.jpg": "/static/media/4.d5bfaed6.jpg",
+    "static/media/5.82c21953.jpg": "/static/media/5.82c21953.jpg",
+    "static/media/HELP-logo.d6197f8f.gif": "/static/media/HELP-logo.d6197f8f.gif",
+    "static/media/index.css": "/static/media/NokiaPureTWeb_Rg.536160e8.ttf",
+    "static/media/BannerBottom.css": "/static/media/PhonesForEveryoneBanner.d2eae700.png",
+    "static/media/Banner.css": "/static/media/TopBanner.cc0ca095.jpg",
+    "static/media/YourMatch.465d4df4.jpg": "/static/media/YourMatch.465d4df4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98744d38.js",
+    "static/js/2.20d7556d.chunk.js",
+    "static/css/main.a24d82f2.chunk.css",
+    "static/js/main.02ab51c0.chunk.js"
+  ]
+}
